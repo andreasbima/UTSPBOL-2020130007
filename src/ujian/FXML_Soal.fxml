@@ -6,8 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="ujian.FXML_SoalController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ujian.FXML_SoalController">
    <children>
       <TableView fx:id="tbvsoal" layoutX="24.0" layoutY="14.0" prefHeight="200.0" prefWidth="552.0">
         <columns>
@@ -18,24 +17,32 @@
       <TextField fx:id="txt01" layoutX="54.0" layoutY="232.0" />
       <Label layoutX="32.0" layoutY="236.0" text="01" />
       <Label layoutX="32.0" layoutY="269.0" text="02" />
-      <TextField layoutX="54.0" layoutY="265.0" />
+      <TextField fx:id="txt02" layoutX="54.0" layoutY="265.0" />
       <Label layoutX="32.0" layoutY="303.0" text="03" />
-      <TextField layoutX="54.0" layoutY="299.0" />
+      <TextField fx:id="txt03" layoutX="54.0" layoutY="299.0" />
       <Label layoutX="32.0" layoutY="337.0" text="04" />
-      <TextField layoutX="54.0" layoutY="333.0" />
+      <TextField fx:id="txt04" layoutX="54.0" layoutY="333.0" />
       <Label layoutX="32.0" layoutY="371.0" text="05" />
-      <TextField layoutX="54.0" layoutY="367.0" />
-      <TextField layoutX="344.0" layoutY="365.0" />
+      <TextField fx:id="txt05" layoutX="54.0" layoutY="367.0" />
+      <TextField fx:id="txt10" layoutX="344.0" layoutY="365.0" />
       <Label layoutX="322.0" layoutY="369.0" text="10" />
-      <TextField layoutX="344.0" layoutY="331.0" />
+      <TextField fx:id="txt09" layoutX="344.0" layoutY="331.0" />
       <Label layoutX="322.0" layoutY="335.0" text="09" />
-      <TextField layoutX="344.0" layoutY="297.0" />
+      <TextField fx:id="txt08" layoutX="344.0" layoutY="297.0" />
       <Label layoutX="322.0" layoutY="301.0" text="08" />
-      <TextField layoutX="344.0" layoutY="263.0" />
+      <TextField fx:id="txt07" layoutX="344.0" layoutY="263.0" />
       <Label layoutX="322.0" layoutY="267.0" text="07" />
       <Label layoutX="322.0" layoutY="234.0" text="06" />
-      <TextField layoutX="344.0" layoutY="230.0" />
+      <TextField fx:id="txt06" layoutX="344.0" layoutY="230.0" />
       <Button fx:id="btncek1" layoutX="215.0" layoutY="232.0" mnemonicParsing="false" onAction="#cek1klik" text="Check" />
-      <Button layoutX="215.0" layoutY="265.0" mnemonicParsing="false" text="Check" />
+      <Button fx:id="btncek2" layoutX="215.0" layoutY="265.0" mnemonicParsing="false" onAction="#cek2klik" text="Check" />
+      <Button fx:id="btncek3" layoutX="214.0" layoutY="299.0" mnemonicParsing="false" onAction="#cek3klik" text="Check" />
+      <Button fx:id="btncek4" layoutX="213.0" layoutY="333.0" mnemonicParsing="false" onAction="#cek4klik" text="Check" />
+      <Button fx:id="btncek5" layoutX="213.0" layoutY="367.0" mnemonicParsing="false" onAction="#cek5klik" text="Check" />
+      <Button fx:id="btncek6" layoutX="501.0" layoutY="230.0" mnemonicParsing="false" onAction="#cek6klik" text="Check" />
+      <Button fx:id="btncek7" layoutX="501.0" layoutY="263.0" mnemonicParsing="false" onAction="#cek7klik" text="Check" />
+      <Button fx:id="btncek8" layoutX="501.0" layoutY="297.0" mnemonicParsing="false" onAction="#cek8klik" text="Check" />
+      <Button fx:id="btncek9" layoutX="501.0" layoutY="331.0" mnemonicParsing="false" onAction="#cek9klik" text="Check" />
+      <Button fx:id="btncek10" layoutX="501.0" layoutY="365.0" mnemonicParsing="false" onAction="#cek10klik" text="Check" />
    </children>
 </AnchorPane>
