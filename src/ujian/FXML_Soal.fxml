@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="ujian.FXML_SoalController">
+   <children>
+      <TableView fx:id="tbvsoal" layoutX="24.0" layoutY="14.0" prefHeight="200.0" prefWidth="552.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt01" layoutX="54.0" layoutY="232.0" />
+      <Label layoutX="32.0" layoutY="236.0" text="01" />
+      <Label layoutX="32.0" layoutY="269.0" text="02" />
+      <TextField layoutX="54.0" layoutY="265.0" />
+      <Label layoutX="32.0" layoutY="303.0" text="03" />
+      <TextField layoutX="54.0" layoutY="299.0" />
+      <Label layoutX="32.0" layoutY="337.0" text="04" />
+      <TextField layoutX="54.0" layoutY="333.0" />
+      <Label layoutX="32.0" layoutY="371.0" text="05" />
+      <TextField layoutX="54.0" layoutY="367.0" />
+      <TextField layoutX="344.0" layoutY="365.0" />
+      <Label layoutX="322.0" layoutY="369.0" text="10" />
+      <TextField layoutX="344.0" layoutY="331.0" />
+      <Label layoutX="322.0" layoutY="335.0" text="09" />
+      <TextField layoutX="344.0" layoutY="297.0" />
+      <Label layoutX="322.0" layoutY="301.0" text="08" />
+      <TextField layoutX="344.0" layoutY="263.0" />
+      <Label layoutX="322.0" layoutY="267.0" text="07" />
+      <Label layoutX="322.0" layoutY="234.0" text="06" />
+      <TextField layoutX="344.0" layoutY="230.0" />
+      <Button fx:id="btncek1" layoutX="215.0" layoutY="232.0" mnemonicParsing="false" onAction="#cek1klik" text="Check" />
+      <Button layoutX="215.0" layoutY="265.0" mnemonicParsing="false" text="Check" />
+   </children>
+</AnchorPane>

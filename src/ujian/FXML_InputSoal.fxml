@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="342.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ujian.FXML_InputSoalController">
+   <children>
+      <Label layoutX="134.0" layoutY="39.0" text="Input Soal">
+         <font>
+            <Font name="Georgia Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="107.0" text="ID Soal" />
+      <Label layoutX="85.0" layoutY="160.0" text="Soal" />
+      <TextField fx:id="txtid" layoutX="159.0" layoutY="103.0" />
+      <Button fx:id="btnsave" layoutX="37.0" layoutY="291.0" mnemonicParsing="false" onAction="#savekik" prefHeight="25.0" prefWidth="62.0" text="Save" />
+      <Button fx:id="btncancel" layoutX="167.0" layoutY="291.0" mnemonicParsing="false" onAction="#cancelklik" prefHeight="25.0" prefWidth="62.0" text="Cancel" />
+      <Button fx:id="btnexit" layoutX="294.0" layoutY="291.0" mnemonicParsing="false" onAction="#exitklik" prefHeight="25.0" prefWidth="62.0" text="Exit" />
+      <TextArea fx:id="txasoal" layoutX="159.0" layoutY="154.0" prefHeight="119.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

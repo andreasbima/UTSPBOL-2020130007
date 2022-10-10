@@ -26,6 +26,7 @@ import javafx.stage.Stage;
 public class FXMLDocumentController implements Initializable {
 
     public static DBPlayer dtplayer = new DBPlayer();
+    public static DBSoal dtsoal = new DBSoal();
 
     private Label label;
     @FXML
@@ -34,6 +35,8 @@ public class FXMLDocumentController implements Initializable {
     private MenuItem exit;
     @FXML
     private MenuItem displayplayer;
+    @FXML
+    private MenuItem displaysoal;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -43,7 +46,19 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void startklik(ActionEvent event) {
-
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("FXML_Soal.fxml"));
+            Parent root = (Parent) loader.load();
+            Scene scene = new Scene(root);
+            Stage stg = new Stage();
+            stg.initModality(Modality.APPLICATION_MODAL);
+            stg.setResizable(false);
+            stg.setIconified(false);
+            stg.setScene(scene);
+            stg.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
@@ -55,6 +70,23 @@ public class FXMLDocumentController implements Initializable {
     private void displayplayerklik(ActionEvent event) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("FXML_DisplayPlayer.fxml"));
+            Parent root = (Parent) loader.load();
+            Scene scene = new Scene(root);
+            Stage stg = new Stage();
+            stg.initModality(Modality.APPLICATION_MODAL);
+            stg.setResizable(false);
+            stg.setIconified(false);
+            stg.setScene(scene);
+            stg.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void displaysoalklik(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("FXML_DisplaySoal.fxml"));
             Parent root = (Parent) loader.load();
             Scene scene = new Scene(root);
             Stage stg = new Stage();

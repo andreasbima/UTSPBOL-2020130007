@@ -11,9 +11,10 @@
    <children>
       <MenuBar layoutX="108.0" layoutY="148.0">
         <menus>
-          <Menu mnemonicParsing="false" text="Player">
+          <Menu mnemonicParsing="false" text="Master">
                <items>
-                  <MenuItem fx:id="displayplayer" mnemonicParsing="false" onAction="#displayplayerklik" text="Display" />
+                  <MenuItem fx:id="displayplayer" mnemonicParsing="false" onAction="#displayplayerklik" text="Player" />
+                  <MenuItem fx:id="displaysoal" mnemonicParsing="false" onAction="#displaysoalklik" text="Soal" />
                </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Quiz">
